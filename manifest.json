@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "hn-dumbify",
+  "description": "summarize and simplify comments on hacker news using the gpt api",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "*://news.ycombinator.com/*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
