@@ -59,6 +59,7 @@ function addCommentButton(comment) {
     // create new p tag element for the response
     var resp = document.createElement("p");
     resp.innerText = dataText;
+    resp.style.color = "red";
 
     navbar.appendChild(resp);
   });
