@@ -60,6 +60,7 @@ function addCommentButton(comment) {
     var resp = document.createElement("p");
     resp.innerText = dataText;
     resp.style.color = "red";
+    resp.style.fontStyle = "italic";
 
     navbar.appendChild(resp);
   });
